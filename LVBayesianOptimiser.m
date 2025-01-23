@@ -67,8 +67,7 @@ classdef LVBayesianOptimiser
                     x = [xquant,xqual];
                     [~,y_cov] = gpPredict(obj.mdl,x);
                
-                    obj.contextual = mean(diag(y_cov))/obj.ymin;
-%                     obj.contextual = abs(mean(diag(y_cov))/obj.ymin); % removed abs as potential bug
+                    obj.contextual = abs(mean(diag(y_cov))/obj.ymin); % removed abs as potential bug
                 end
             end    
         end
@@ -109,8 +108,7 @@ classdef LVBayesianOptimiser
                     x = [xquant,xqual];
                     [~,y_cov] = gpPredict(obj.mdl,x);
                
-                    obj.contextual = mean(diag(y_cov))/obj.ymin;
-%                     obj.contextual = abs(mean(diag(y_cov))/obj.ymin); % removed abs as potential bug
+                    obj.contextual = abs(mean(diag(y_cov))/obj.ymin); % removed abs as potential bug
 %                     obj.contextual = abs(mean(diag(y_cov).^2)/obj.ymin); % squaring amplifies the variance as data is added (will favour more aggressive exploration after initial exploitation)
             end
         end
