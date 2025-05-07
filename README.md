@@ -40,7 +40,7 @@ For a detailed example, see the 'Test Function' folder, which contains the appli
 
 **Applications**
 
-ALaBO has been successfully applied to the self-optimisation of catalytic reactions, including the Suzuki–Miyaura cross-coupling reaction, achieving high yields with a limited number of experiments. 
+ALaBO has been successfully applied to the self-optimisation of catalytic reactions, including the Suzuki–Miyaura cross-coupling reaction, achieving high yields with a limited number of experiments (see reference below).
 Its ability to handle mixed-variable spaces makes it suitable for various chemical engineering and process optimisation tasks.
 
 **Reference**
